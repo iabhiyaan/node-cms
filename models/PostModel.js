@@ -20,3 +20,5 @@ const PostSchema = Schema({
 		required: Date.now()
 	}
 });
+
+module.exports = mongoose.model("post", "PostSchema");

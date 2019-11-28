@@ -1,0 +1,59 @@
+<div class="sidebar">
+   <ul class="navigation-meni">
+      <li class="nav-category-divider">MAIN</li>
+      <li class="active">
+         <a href="/admin">
+            <span class="link-title">Dashboard</span>
+            <i class="mdi mdi-gauge link-icon"></i>
+         </a>
+      </li>
+      <li>
+         <a href="#sample-pages" data-toggle="collapse" aria-expanded="false">
+            <span class="link-title">
+               Posts
+            </span>
+            <i class="mdi mdi-flask link-icon"></i>
+         </a>
+         <ul class="collapse navigation-submenu" id="sample-pages">
+            <li>
+               <a href="/admin/posts/create">Create post</a>
+            </li>
+            <li>
+               <a href="/admin/posts">List all post</a>
+            </li>
+         </ul>
+      </li>
+
+   </ul>
+   {{!-- Bottom sidebar --}}
+   <div class="sidebar_footer">
+      <div class="user-account">
+         <div class="user-profile-item-tittle">Switch User</div>
+         <div class="user-profile-itemcategory"><a class="user-profile-item" href="#">
+               <div class="avatar">
+                  <img class="profile-img img-rounded img-sm" src="/backend/images/profile/male/image_5.png"
+                     alt="profile image"> Rodney Mann</div>
+            </a><a class="user-profile-item" href="#">
+               <div class="avatar">
+                  <img class="profile-img img-rounded img-sm" src="/backend/images/profile/female/image_4.png"
+                     alt="profile image"> Sally Stone</div>
+            </a><a class="user-profile-item" href="#">
+               <div class="avatar">
+                  <img class="profile-img img-rounded img-sm" src="/backend/images/profile/female/image_1.png"
+                     alt="profile image"> Olivia Collier</div>
+            </a></div><a class="user-profile-item" href="#"><i class="mdi mdi-account"></i> Profile</a> <a
+            class="user-profile-item" href="#"><i class="mdi mdi-settings"></i> Account Settings</a> <a
+            class="btn btn-primary btn-logout" href="#">Logout</a>
+      </div>
+      <div class="btn-group admin-access-level">
+         <div class="avatar"><img class="profile-img" src="./images/profile/male/image_1.png" alt=""></div>
+         <div class="user-type-wrapper">
+            <p class="user_name">Abhiyan Shrestha</p>
+            <div class="d-flex align-items-center">
+               <div class="status-indicator small rounded-indicator bg-success"></div><small
+                  class="user_access_level">Admin</small>
+            </div>
+         </div><i class="arrow mdi mdi-chevron-right"></i>
+      </div>
+   </div>
+</div>

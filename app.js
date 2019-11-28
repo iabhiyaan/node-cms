@@ -6,6 +6,7 @@ const hbs = require("express-handlebars");
 const app = express();
 const { mongoDBURL, PORT } = require("./config/config");
 const defaultRoutes = require("./routes/defaultRoutes");
+const adminRoutes = require("./routes/adminRoutes");
 
 // Connect to DB
 mongoose
@@ -13,7 +14,7 @@ mongoose
 		useNewUrlParser: true,
 		useUnifiedTopology: true
 	})
-	.then((res) => console.log(res))
+	.then((res) => res)
 	.catch((err) => console.log(err));
 
 // configure express
@@ -27,6 +28,7 @@ app.set("view engine", "handlebars");
 
 // Routes
 app.use("/", defaultRoutes);
+app.use("/admin", adminRoutes);
 
 // Listen on PORT
 app.listen(PORT, () => {

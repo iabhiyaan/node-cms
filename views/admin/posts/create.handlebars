@@ -1,0 +1,49 @@
+<div class="page-content-wrapper">
+   <div class="page-content-wrapper-inner">
+      <div class="content-viewport">
+         <div class="row justify-content-center">
+            <div class="col-lg-8 equel-grid">
+               <div class="grid">
+                  <p class="grid-header">Create Posts</p>
+                  <div class="grid-body">
+                     <div class="item-wrapper">
+                        <form action="/admin/posts" method="POST">
+                           <div class="form-group">
+                              <label for="title">Title</label>
+                              <input type="text" class="form-control" name="title" id="title" placeholder="Enter title">
+                           </div>
+                           <div class="form-group">
+                              <label for="status">Status</label>
+                              <select id="status" name="staust" class="custom-select">
+                                 <option value="public">Public</option>
+                                 <option value="private">Private</option>
+                                 <option value="draft">Draft</option>
+                              </select>
+                           </div>
+                           <div class="form-group">
+                              <label> Comments </label>
+                              <div class="checkbox">
+                                 <label for="allowcomments">
+                                    <input type="checkbox" name="allowcomments" id="allowcomments"
+                                       class="form-check-input">
+                                    <i class="input-frame"></i>
+                                    Allow Comments
+                                 </label>
+                              </div>
+
+                           </div>
+                           <div class="form-group">
+                              <label for="description">Content</label>
+                              <textarea class="form-control" cols="12" rows="5" name="description"
+                                 id="description"></textarea>
+                           </div>
+                           <button type="submit" class="btn btn-sm btn-block btn-primary">Sign in</button>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
